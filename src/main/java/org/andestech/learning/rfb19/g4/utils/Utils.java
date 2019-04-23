@@ -6,6 +6,25 @@ import java.util.Random;
 
 public class Utils {
 
+    public static void echo(char ch, int N)
+    {
+        StringBuilder sb = new StringBuilder(N);
+        for (int j=0; j<N; j++) sb.append(ch);
+        System.out.println(sb);
+
+    }
+
+    public static void echo()
+    {
+        echo('-', 85);
+    }
+
+    public static void echo(char ch)
+    {
+        echo(ch, 85);
+    }
+
+
     public static List<Integer> genRandomIntegerList(int N, int min, int max)
     {
         List<Integer> list = new ArrayList<>(N);
